@@ -62,11 +62,9 @@ class Sale:
         return self.__saleNumber
 
 
-# Example usage
 productOne = Product(sale=None)
 productTwo = Product(sale=None)
 
-# Set initial inventory levels
 productOne.setInventory(10)
 productTwo.setInventory(5)
 
