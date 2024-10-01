@@ -1,0 +1,4 @@
+[submodule "labs"]
+	path = labs
+	url = https://github.com/ryry91021/ssw345-labs
+	branch = main
