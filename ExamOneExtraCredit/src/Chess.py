@@ -1,3 +1,4 @@
+# Chess.py
 from .PairGame import PairGame
 from .Student import Student
 from .Teacher import Teacher
@@ -7,9 +8,7 @@ class Chess(PairGame):
         super().__init__("Chess", p1, p2)
 
     def play(self):
-        super().play()
-        
-        p1_profession = "the student" if isinstance(self.p1, Student) else "the teacher"
-        p2_profession = "the student" if isinstance(self.p2, Student) else "the teacher"
-        
-        print(f"{p1_profession} {self.p1.name} is playing Chess against {p2_profession} {self.p2.name}")
+        player_one = "the student" if isinstance(self.p1, Student) else "the teacher"
+        player_two = "the student" if isinstance(self.p2, Student) else "the teacher"
+
+        print(f"{player_one} {self.p1.name} is playing Chess against {player_two} {self.p2.name}")

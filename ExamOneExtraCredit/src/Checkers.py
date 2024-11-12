@@ -10,7 +10,15 @@ class Checkers(PairGame):
         if isinstance(self.p1, Student):
             p1_profession = "the student"
         elif isinstance(self.p1, Teacher):
-            p2_profession = "the Teacher"
+            p1_profession = "the teacher"
         else:
-            raise
+            raise TypeError("Player one must be a Student or a Teacher.")
+
+        if isinstance(self.p2, Student):
+            p2_profession = "the student"
+        elif isinstance(self.p2, Teacher):
+            p2_profession = "the teacher"
+        else:
+            raise TypeError("Player two must be a Student or a Teacher.")
+        
         print(f"{p1_profession} {self.p1.name} is playing Checkers against {p2_profession} {self.p2.name}")
